@@ -1,28 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
 main{
     width: 80%;
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 50px;
-    padding: 0px 40px;
+    margin: 32px;
+    padding: 50px 20px;
     border: none;
-    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .15);
 }
 .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 15%;
-    border-radius: 20px;
+    width: 70%;
+
 }
+
+
 .card{
     color: #fff;
     padding-left: 40px;
@@ -30,11 +42,13 @@ main{
     padding-bottom: 45px;
     padding-top: 45px;
     width: 100%;
-    
 }
+
+    
 
 .sedan{
     background: hsl(31, 77%, 52%);
+    border-radius: 15px 0px 0px 15px;
 }
 
 .suv{
@@ -43,6 +57,7 @@ main{
 
 .luxury{
    background:hsl(179, 100%, 13%) ; 
+   border-radius: 0px 15px 15px 0px;
 }
 
 button{
@@ -53,6 +68,8 @@ button{
     border-radius: 80PX;
     border: 2px solid  #fff;
 }
+
+
 
 .sedan button{
     color:hsl(31, 77%, 52%);
@@ -69,6 +86,33 @@ button:hover{
     background: none;
     transition: 10ms ease-in;
     color: #fff;
+    cursor: pointer;
 }
+p{
+    font-size: 15px;
+}
+.attribution{
+    width: 100%;
+    font-size: small;
+    color: #fff;
+    padding: 3px 0px;
+    margin-top: auto;
+    background: hsl(31, 77%, 52%);
+}
+.attribution a{
+    
+    color: #fff1ff;
+}
+@media screen and (max-width:700px) {
+    .container{
+        flex-direction: column;
+    }
+    .luxury{
+        border-radius: 0px 0px 15px 15px;
+     }
+     .sedan{
+        border-radius: 15px 15px 0px 0px;
+     }
 
+}
 
